@@ -1,0 +1,122 @@
+VGA timings
+-----------
+
+Resolution: 640x480 @60
+Frequency: 25.00
+H_Visible: 640
+H_Front: 16
+H_Sync: 96
+H_Back: 48
+H_Whole: 800
+H_Polarity: -
+V_Visible: 480
+V_Front: 10
+V_Sync: 2
+V_Back: 33
+V_Whole: 525
+V_Polarity: -
+
+Resolution: 800x600 @60
+Frequency: 40.00
+H_Visible: 800
+H_Front: 40
+H_Sync: 128
+H_Back: 88
+H_Whole: 1056
+H_Polarity: +
+V_Visible: 600
+V_Front: 1
+V_Sync: 4
+V_Back: 23
+V_Whole: 628
+V_Polarity: +
+
+Resolution: 1024x768 @60
+Frequency: 65.00
+H_Visible: 1024
+H_Front: 24
+H_Sync: 136
+H_Back: 160
+H_Whole: 1344
+H_Polarity: -
+V_Visible: 768
+V_Front: 3
+V_Sync: 6
+V_Back: 29
+V_Whole: 806
+V_Polarity: -
+
+Resolution: 1280x720 @60
+Frequency: 74.25
+H_Visible: 1280
+H_Front: 72
+H_Sync: 80
+H_Back: 216
+H_Whole: 1648
+H_Polarity: +
+V_Visible: 720
+V_Front: 3
+V_Sync: 5
+V_Back: 22
+V_Whole: 750
+V_Polarity: +
+
+Resolution: 1280x800 @60
+Frequency: 83.46
+H_Visible: 1280
+H_Front: 64
+H_Sync: 136
+H_Back: 200
+H_Whole: 1680
+H_Polarity: -
+V_Visible: 800
+V_Front: 1
+V_Sync: 3
+V_Back: 24
+V_Whole: 828
+V_Polarity: +
+
+Resolution: 1368x768 @60
+Frequency: 85.86
+H_Visible: 1368
+H_Front: 72
+H_Sync: 144
+H_Back: 216
+H_Whole: 1800
+H_Polarity: -
+V_Visible: 768
+V_Front: 1
+V_Sync: 3
+V_Back: 23
+V_Whole: 795
+V_Polarity: +
+
+Resolution: 1920x1080 @60
+Frequency: 148.50
+H_Visible: 1920
+H_Front: 88
+H_Sync: 44
+H_Back: 148
+H_Whole: 2200
+H_Polarity: +
+V_Visible: 1080
+V_Front: 4
+V_Sync: 5
+V_Back: 36
+V_Whole: 1125
+V_Polarity: +
+
+Resolution: 1920x1440 @60
+Frequency: 234.00
+H_Visible: 1920
+H_Front: 128
+H_Sync: 208
+H_Back: 344
+H_Whole: 2600
+H_Polarity: -
+V_Visible: 1440
+V_Front: 1
+V_Sync: 3
+V_Back: 56
+V_Whole: 1500
+V_Polarity: +
