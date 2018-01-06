@@ -72,7 +72,7 @@ architecture Behavioral of Nexys4_FrameBuffer is
 
 	signal gpuClk		:	STD_LOGIC;
 	signal pixClk		:	STD_LOGIC;
-	signal memClk		:	STD_LOGIC;	
+	signal memClk		:	STD_LOGIC;
 	
 begin
 
@@ -85,9 +85,9 @@ begin
 		pixClk		=> pixClk
 	);
 
-	process(gpuClk)
+	process(CLK)
 	begin
-		if (rising_edge(gpuClk)) then
+		if (rising_edge(CLK)) then
 			if (addrCnt = 480000) then
 				addrCnt <= (others => '0');
 			elsif (bufFull = '0') then
@@ -98,7 +98,7 @@ begin
 	
 	FrBuf: FrameBuffer port map (
 		-- data in --
-		inputClk	=> gpuClk,
+		inputClk	=> CLK,
 		reset		=> '0',
 		inBuf_wrEn	=> not bufFull,
 		inBuf_full	=> bufFull,
@@ -109,7 +109,7 @@ begin
 		HSYNC_OUT	=> HSYNC_OUT,
 		VSYNC_OUT	=> VSYNC_OUT,
 		-- cell ram --
-		memClk		=> memClk,
+		memClk		=> CLK,
 		MemAdr      => MemAdr,
 		MemDB       => MemDB,
 		RamWait		=> RamWait,
