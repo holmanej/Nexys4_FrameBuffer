@@ -98,7 +98,7 @@ begin
 	
 	FrBuf: FrameBuffer port map (
 		-- data in --
-		inputClk	=> CLK,
+		inputClk	=> gpuClk,
 		reset		=> '0',
 		inBuf_wrEn	=> not bufFull,
 		inBuf_full	=> bufFull,

@@ -37,7 +37,6 @@ architecture Behavioral of FrameBuffer is
 		Port(
 			wr_clk		: in  STD_LOGIC;
 			rd_clk		: in  STD_LOGIC;
-			rst			: in  STD_LOGIC;
 			din			: in  STD_LOGIC_VECTOR (15 downto 0);
 			wr_en		: in  STD_LOGIC;
 			rd_en		: in  STD_LOGIC;
@@ -52,7 +51,6 @@ architecture Behavioral of FrameBuffer is
 		Port(
 			wr_clk		: in  STD_LOGIC;
 			rd_clk		: in  STD_LOGIC;
-			rst			: in  STD_LOGIC;
 			din			: in  STD_LOGIC_VECTOR (30 downto 0);
 			wr_en		: in  STD_LOGIC;
 			rd_en		: in  STD_LOGIC;
@@ -117,7 +115,6 @@ begin
 	inBuf: input_Buffer port map (
 		wr_clk		=> inputClk,
 		rd_clk		=> memClk,
-		rst			=> reset,
 		din			=> inBuf_data,
 		wr_en		=> inBuf_wrEn,
 		rd_en		=> inBuf_rdEn,
@@ -155,7 +152,6 @@ begin
 	outBuf: output_Buffer port map (
 		wr_clk		=> memClk,
 		rd_clk		=> pixClk,
-		rst			=> reset,
 		din			=> outBuf_wrData,
 		wr_en		=> outBuf_wrEn,
 		rd_en		=> outBuf_rdEn,
@@ -174,6 +170,5 @@ begin
 	);
 	
 	RGB_OUT <= outBuf_rdData(11 downto 0) when (outBuf_rdEn = '1') else x"000";
-	--RGB_OUT <= x"0F0" when (outBuf_rdEn = '1') else x"000";
 
 end Behavioral;
